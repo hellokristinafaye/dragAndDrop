@@ -40,26 +40,28 @@
     <div id="right"></div>
 </div>
 
-<script>
+<script src="script.js">
 
-let lists = document.getElementsByClassName("list");
-let rightBox = document.getElementById("right");
-let leftBox = document.getElementById("left");
 
-for(list of lists){
-    list.addEventListener("dragstart", function(e){
-        let selected = e.target;
-        // console.log(selected);
+// moving the below code to a sepapret JS file to see if that'll reflect on GH.
+// let lists = document.getElementsByClassName("list");
+// let rightBox = document.getElementById("right");
+// let leftBox = document.getElementById("left");
 
-        rightBox.addEventListener("dragover",  function(e){
-            e.preventDefault();
-    });
-    rightBox.addEventListener("drop", function(e){
-        rightBox.appendChild(selected);
-        selected = null;
-    })
-})
-}
+// for(list of lists){
+//     list.addEventListener("dragstart", function(e){
+//         let selected = e.target;
+//         // console.log(selected);
+
+//         rightBox.addEventListener("dragover",  function(e){
+//             e.preventDefault();
+//     });
+//     rightBox.addEventListener("drop", function(e){
+//         rightBox.appendChild(selected);
+//         selected = null;
+//     })
+// })
+// }
 
 </script>
 
